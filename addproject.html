@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<title>Team Tracker</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg bg--blue">
+				<a class="navbar-brand" href="index.html"><p class="text-white l--33 f-24 ls--3">TEAMTRACKER</p> </a>
+			  	<button class="navbar-toggler bd--white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="fa fa-bars text-white"></span>
+			  	</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav ml-auto">
+				      	<li class="nav-item dropdown">
+				        	<a class="nav-link dropdown-toggle text-white custom--dropdown" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<div class="row">
+									<div class="col-md-3 ">
+										<img src="assets/images/user_profile.png" class="w-100 user-profile" alt="user profile">
+									</div>
+									<div class="col-md-9 px-0">
+										<div class="profile-details">
+											<p class="user--name mb-0 f-14 font-weight-bold">Jeremiah Righteous </p>
+									  		<p class="title mt-0 f-11 font-weight-bold">Owner</p>
+										</div>
+										
+									</div>
+								</div>			          		
+				        	</a>
+				        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          		<a class="dropdown-item" href="#">dashboard</a>
+						        <a class="dropdown-item" href="#">Settings</a>
+						        <div class="dropdown-divider"></div>
+						        <a class="dropdown-item" href="#">Log Out</a>
+				        	</div>
+				      	</li>
+				    </ul>
+				</div>
+			</nav>
+		</header>
+		<body>
+			<main>
+				<section class="department mt--8">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card p-lg-5  p-sm-2">
+									<div class="card-header bg-transparent border-0 ">
+										<div class="row justify-content-end">
+											
+											<div class="col-md-6 col-lg-5">
+												<div class="float-right filter">
+													<img src="assets/images/face.png" alt="" class="rounded-pill">
+													<span class="text--grey"> Department: </span>
+													<span class="dropdown show">
+															<a class="btn bg-transparent dropdown-toggle text--blue filter-dropdown" href="#" role="button" id="dropdownMenuDepartment" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																All
+															</a>
+															
+															<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+																<a class="dropdown-item" href="#" aria-label="all">All</a>
+																<a class="dropdown-item" href="#" aria-label="Engineering">Engineering</a>
+																<a class="dropdown-item" href="#" aria-label="business">Business</a>
+																<a class="dropdown-item" href="#" aria-label="marketing">Marketing</a>
+															</div>
+														</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="table-responsive-sm mt-4">
+										<table class="table">
+											<thead class="bg--light">
+												<th>Project</th>
+												<th>Maximum Target</th>
+												<th>Target Type</th>
+												<th>Target Interval</th>
+                                                <th>department </th>
+                                                <th>Assigned To </th>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														Timbu
+													</td>
+													<td>
+                                                        <input type="text" class="target-input-currency" readonly value="$">
+                                                        <input type="text" class="target-input" placeholder="200">
+                                                    </td>
+													<td contenteditable>Features</td>
+													<td>
+                                                        
+                                                        <div class="btn-group target-interval-filter">
+                                                            <button type="button" class="btn bg-transparent text--dark-darker w-100">Monthly</button>
+                                                            <button type="button" class="btn bg-transparent text--dark-darker dropdown-toggle interval--filter-dropdown dropdown-toggle-split w-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <!-- <span class="sr-only">Toggle Dropdown</span> -->
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Monthly</a>
+                                                                <a class="dropdown-item" href="#">Weekly</a>
+                                                                <a class="dropdown-item" href="#">Yearly</a>
+                                                                <a class="dropdown-item" href="#">Quarterly</a>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-group target-interval-filter">
+                                                            <button type="button" class="btn bg-transparent text--dark-darker w-100">Department</button>
+                                                            <button type="button" class="btn bg-transparent text--dark-darker dropdown-toggle interval--filter-dropdown dropdown-toggle-split w-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <span class="sr-only">All</span>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">All</a>
+                                                                <a class="dropdown-item" href="#">Engineering</a>
+                                                                <a class="dropdown-item" href="#">Sales</a>
+                                                                
+                                                                <a class="dropdown-item" href="#">IT</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+													<td>
+                                                        <img src="assets/images/user_1.png" class="rounded-circle" alt="">
+                                                        <img src="assets/images/user_2.png" class="rounded-circle" alt="">
+                                                        <img src="assets/images/user_3.png" class="rounded-circle" alt="">
+                                                        <button class="btn rounded-circle bg--blue text-white"><i class="fa fa-plus"></i></button>
+                                                    </td>
+												</tr>
+												
+												<tr>
+													<td>
+                                                        Sales(Corporate)
+                                                    </td>
+                                                    <td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+
+												<tr>
+													<td>Coding</td>
+                                                    <td></td>
+                                                    <td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+
+												<tr>
+													<td>
+														KidStories
+													</td>
+                                                    <td></td>
+                                                    <td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button class="btn btn-md bg-transparent add-project-btn font-weight-bold px-3">Add Project</button>
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <button class="btn btn-md bg--blue text-white font-weight-bold px-5 float-right">Save</button>
+                                                    </td>
+                                                </tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</section>
+				
+				<section class="mt--5 bg--blue-lighter pt-4">
+					<div class="container">
+						<div class="text-center text--dark">
+							Your Mood
+							<span class="dropdown show">
+								<a class="btn bg-transparent dropdown-toggle text--dark" href="#" role="button" id="dropdownMenuMood" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									😀
+								</a>
+								
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuMood">
+									<a class="dropdown-item" href="#" aria-label="grinning face">😀</a>
+									<a class="dropdown-item" href="#" aria-label="grinning face with big eyes">😃</a>
+									<a class="dropdown-item" href="#" aria-label="beaming face with smiling eyes">😁</a>
+									<a class="dropdown-item" href="#" aria-label="relieved face">😌</a>
+								</div>
+							</span>
+						</div>
+					</div>
+				</section>
+			</main>
+		</body>
+		<footer class="footer bg-white pt-3">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-3">
+						<p class="f-18 font-weight-bold">&copy; 2018 ExpenseTrim</p>
+					</div>
+					<div class="col-md-3">
+						<p class="f-18 font-weight-bold text-center">Terms of Use</p>
+					</div>
+					<div class="col-md-3">
+						<p class="f-18 font-weight-bold text-right">Privacy Policy</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
