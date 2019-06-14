@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/table.css">
 
 		<title>Team Tracker</title>
 	</head>
@@ -58,50 +59,51 @@
 								<div class="card p-lg-5  p-sm-2">
 									<div class="card-header bg-transparent border-0 bx--sh">
 										<div class="row justify-content-between">
-											<div class="col-md-5 col-lg-3">
-												<div class="text--grey">Show: 
-													<span class="dropdown show">
+											<div class="col-6 col-md-5 col-lg-3">
+												<div class="text--grey">Show:
+													<select name="" id="interval" class="form-control custom--select-input">
+														<option value="">Monthly</option>
+														<option value="">weekly</option>
+														<option value=""></option>
+													</select>
+													<!-- <span class="dropdown show">
 														<a class="btn bg-transparent dropdown-toggle text--blue filter-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 															Monthly
 														</a>
 														
-														<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+														<div class="dropdown-menu menu-list" aria-labelledby="dropdownMenuLink">
 															<a class="dropdown-item" href="#" aria-label="monthly">monthly</a>
 															<a class="dropdown-item" href="#" aria-label="yearly">yearly</a>
 															<a class="dropdown-item" href="#" aria-label="quarterly">quarterly</a>
 														</div>
-													</span>
+													</span> -->
 												</div>
 												
 											</div>
-											<div class="col-md-6 col-lg-5">
-												<div class="float-right filter">
+											<div class="col-6 col-md-6 col-lg-5 ">
+												<div class="float-right filter ">
 													<img src="assets/images/face.png" alt="" class="rounded-pill">
 													<span class="text--grey"> Department: </span>
-													<span class="dropdown show">
-															<a class="btn bg-transparent dropdown-toggle text--blue filter-dropdown" href="#" role="button" id="dropdownMenuDepartment" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																All
-															</a>
-															
-															<div class="dropdown-menu" aria-labelledby="dropdownMenu">
-																<a class="dropdown-item" href="#" aria-label="all">All</a>
-																<a class="dropdown-item" href="#" aria-label="Engineering">Engineering</a>
-																<a class="dropdown-item" href="#" aria-label="business">Business</a>
-																<a class="dropdown-item" href="#" aria-label="marketing">Marketing</a>
-															</div>
-														</span>
+													<select name="" id="interval" class="form-control custom--select-input">
+														<option value="">All</option>
+														<option value="">Engineering</option>
+														<option value="">Marketing</option>
+													</select>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="table-responsive-sm mt-4">
+									<div class="">
 										<table class="table bd--grey">
 											<thead class="bg--light">
-												<th>Name</th>
-												<th>Project</th>
-												<th>Achieved/Target</th>
-												<th colspan="2">Progress Status</th>
-												<th>Todo List</th>
+												<tr>
+													<th scope="col">Name</th>
+													<th scope="col">Project</th>
+													<th scope="col">Achieved/Target</th>
+													<th scope="col" colspan="2">Progress Status</th>
+													<th scope="col">Todo List</th>
+												</tr>
+												
 											</thead>
 											<tbody>
 												<tr>
@@ -303,10 +305,10 @@
 					<div class="col-md-3">
 						<p class="f-18 font-weight-bold">&copy; 2018 ExpenseTrim</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-6 col-md-3">
 						<p class="f-18 font-weight-bold text-center">Terms of Use</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-6 col-md-3">
 						<p class="f-18 font-weight-bold text-right">Privacy Policy</p>
 					</div>
 				</div>

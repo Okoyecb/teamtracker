@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/table.css">
 
 		<title>Team Tracker</title>
 	</head>
@@ -60,26 +61,19 @@
 										<div class="row justify-content-end">
 											
 											<div class="col-md-6 col-lg-5">
-												<div class="float-right filter">
+												<div class="filter">
 													<img src="assets/images/face.png" alt="" class="rounded-pill">
 													<span class="text--grey"> Department: </span>
-													<span class="dropdown show">
-															<a class="btn bg-transparent dropdown-toggle text--blue filter-dropdown" href="#" role="button" id="dropdownMenuDepartment" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																All
-															</a>
-															
-															<div class="dropdown-menu" aria-labelledby="dropdownMenu">
-																<a class="dropdown-item" href="#" aria-label="all">All</a>
-																<a class="dropdown-item" href="#" aria-label="Engineering">Engineering</a>
-																<a class="dropdown-item" href="#" aria-label="business">Business</a>
-																<a class="dropdown-item" href="#" aria-label="marketing">Marketing</a>
-															</div>
-														</span>
+													<select name="" id="interval" class="form-control custom--select-input2">
+														<option value="">All</option>
+														<option value="">Engineering</option>
+														<option value="">Marketing</option>
+													</select>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="table-responsive-sm mt-4">
+									<div class="">
 										<table class="table">
 											<thead class="bg--light">
 												<th>Project</th>
@@ -169,13 +163,13 @@
 													<td></td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="3">
+                                                    <td colspan="3" class="m-xs-auto">
                                                         <button class="btn btn-md bg-transparent add-project-btn font-weight-bold px-3">Add Project</button>
                                                     </td>
                                                     <td></td>
                                                     <td></td>
                                                     <td class="text-center">
-                                                        <button class="btn btn-md bg--blue text-white font-weight-bold px-5" >Save</button>
+                                                        <button class="btn btn-md bg--blue text-white font-weight-bold px-5 save-btn" >Save</button>
                                                     </td>
                                                 </tr>
 											</tbody>
@@ -214,10 +208,10 @@
 					<div class="col-md-3">
 						<p class="f-18 font-weight-bold">&copy; 2018 ExpenseTrim</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-6 col-md-3">
 						<p class="f-18 font-weight-bold text-center">Terms of Use</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-6 col-md-3">
 						<p class="f-18 font-weight-bold text-right">Privacy Policy</p>
 					</div>
 				</div>
