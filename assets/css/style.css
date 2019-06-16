@@ -10,6 +10,7 @@ html,body{
 	font-weight: normal;
 	width: 100%;
 	background: #e5e5e5;
+	overflow-x: hidden;
 }
 
 /* Margin & Padding */
@@ -23,7 +24,7 @@ html,body{
 .bg--blue{ background: #0680C3;}
 .bg--white{ background: #fff; }
 .bg--blue-darker{ background: #0187D0; }
-.bg--blue-lighter{ background: rgba(6, 128, 195, 0.25);}
+/* .bg--blue-lighter{ background: rgba(6, 128, 195, 0.25);} */
 .bg--light{ background: #f7f7f7; }
 .text--dark{ color: #000000; }
 .text--blue{ color: #0680c3; }

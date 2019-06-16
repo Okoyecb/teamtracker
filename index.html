@@ -1,324 +1,395 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/table.css">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>Team Tracker</title>
-	</head>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/table.css">
+
+	<title>Team Tracker</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg--blue">
+			<a class="navbar-brand" href="index.html">
+				<p class="text-white l--33 f-24 ls--3">TEAMTRACKER</p>
+			</a>
+			<button class="navbar-toggler bd--white" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="fa fa-bars text-white"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white custom--dropdown" href="#" id="navbarDropdown "
+							role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="row">
+								<div class="col-md-3 ">
+									<img src="assets/images/user_profile.png" class="w-100 user-profile"
+										alt="user profile">
+								</div>
+								<div class="col-md-9 px-0">
+									<div class="profile-details">
+										<p class="user--name mb-0 f-14 font-weight-bold">Jeremiah Righteous </p>
+										<p class="title mt-0 f-11 font-weight-bold">Owner</p>
+									</div>
+
+								</div>
+							</div>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">dashboard</a>
+							<a class="dropdown-item" href="#">Settings</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Log Out</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg bg--blue">
-				<a class="navbar-brand" href="index.html"><p class="text-white l--33 f-24 ls--3">TEAMTRACKER</p> </a>
-			  	<button class="navbar-toggler bd--white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    	<span class="fa fa-bars text-white"></span>
-			  	</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-				      	<li class="nav-item dropdown">
-				        	<a class="nav-link dropdown-toggle text-white custom--dropdown" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<div class="row">
-									<div class="col-md-3 ">
-										<img src="assets/images/user_profile.png" class="w-100 user-profile" alt="user profile">
-									</div>
-									<div class="col-md-9 px-0">
-										<div class="profile-details">
-											<p class="user--name mb-0 f-14 font-weight-bold">Jeremiah Righteous </p>
-									  		<p class="title mt-0 f-11 font-weight-bold">Owner</p>
+		<main>
+			<section class="department mt--8">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card p-lg-5  p-sm-2">
+								<div class="card-header bg-transparent border-0 bx--sh">
+									<div class="row justify-content-between">
+										<div class="col-6 col-md-5 col-lg-3">
+											<div class="text--grey">Show:
+												<select name="" id="interval" class="form-control custom--select-input">
+													<option value="">Monthly</option>
+													<option value="">weekly</option>
+													<option value=""></option>
+												</select>
+											</div>
 										</div>
-										
+										<div class="col-6 col-md-6 col-lg-5 ">
+											<div class="float-right filter ">
+												<img src="assets/images/face.png" alt="" class="rounded-pill">
+												<span class="text--grey">Department:</span>
+												<select name="" id="interval" class="form-control custom--select-input">
+													<option value="">All</option>
+													<option value="">Engineering</option>
+													<option value="">Marketing</option>
+												</select>
+											</div>
+										</div>
 									</div>
-								</div>			          		
-				        	</a>
-				        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				          		<a class="dropdown-item" href="#">dashboard</a>
-						        <a class="dropdown-item" href="#">Settings</a>
-						        <div class="dropdown-divider"></div>
-						        <a class="dropdown-item" href="#">Log Out</a>
-				        	</div>
-				      	</li>
-				    </ul>
+								</div>
+								<div class="">
+									 <table class="table bd--grey">
+										<thead class="bg--light">
+											<tr>
+												<th scope="col">Name</th>
+												<th scope="col">Project</th>
+												<th scope="col">Achieved/Target</th>
+												<th scope="col" colspan="2">Progress Status</th>
+												<th scope="col">Todo List</th>
+											</tr>
+
+										</thead>
+										<tbody>
+											<tr>
+												<td data-label="Name">
+													<img src="assets/images/user_1.png" class="rounded-circle"
+														alt="user ">
+													<span>Davi Marvel</span>
+												</td>
+												<td data-label="Project">Marketing</td>
+												<td data-label="Target">$90 / $150 Sales</td>
+												<td data-label="Status" colspan="2">
+													<div class="progress mt-2">
+														<div class="progress-bar green--bar" role="progressbar"
+															style="width: 94%" aria-valuenow="94" aria-valuemin="0"
+															aria-valuemax="100"></div>
+
+													</div>
+													<span class="float-right text--dark">94%</span>
+												</td>
+												<td data-label="Todo">5 items</td>
+											</tr>
+
+											<tr>
+												<td data-label="Name">
+													<img src="assets/images/user_2.png" class="rounded-circle"
+														alt="user ">
+													<span>Rose Darwin</span>
+												</td>
+												<td data-label="Project">Debugging</td>
+												<td data-label="Target">10 / 50 Bugs</td>
+												<td data-label="Status" colspan="2">
+													<div class="progress mt-2">
+														<div class="progress-bar orange--bar" role="progressbar"
+															style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+													<span class="text--dark float-right">75%</span>
+												</td>
+												<td data-label="Todo">2 items</td>
+											</tr>
+
+											<tr class="bg--light">
+												<td data-label="Name">
+													<img src="assets/images/user_3.png" class="rounded-circle"
+														alt="user ">
+													<span>Lizzy James</span>
+												</td>
+												<td data-label="Project">Coding</td>
+												<td data-label="Target">3 / 120 Codes</td>
+												<td data-label="Status" colspan="2">
+													<div class="progress mt-2">
+														<div class="progress-bar green--bar" role="progressbar"
+															style="width: 97%" aria-valuenow="97" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+													<span class="text--dark float-right">97%</span>
+												</td>
+												<td data-label="Todo">17 items</td>
+											</tr>
+
+											<tr>
+												<td data-label="Name">
+													<img src="assets/images/user_1.png" class="rounded-circle"
+														alt="user ">
+													<span>Alex Zue</span>
+												</td>
+												<td data-label="Project">KidStories</td>
+												<td data-label="Target">1 / 3 designs</td>
+												<td data-label="Status" colspan="2">
+													<div class="progress mt-2">
+														<div class="progress-bar green--bar" role="progressbar"
+															style="width: 65%" aria-valuenow="65" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+													<span class="text--dark float-right">65%</span>
+												</td>
+												<td data-label="Todo">0</td>
+											</tr>
+
+											<tr>
+												<td data-label="Name">
+													<img src="assets/images/user_1.png" class="rounded-circle"
+														alt="user ">
+													<span>Davi Marvel</span>
+												</td>
+												<td data-label="Project">Marketing</td>
+												<td data-label="Target">$200 / $370 Sales</td>
+												<td data-label="Status" colspan="2">
+													<div class="progress mt-2">
+														<div class="progress-bar orange--bar" role="progressbar"
+															style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+													<span class="text--dark float-right">90%</span>
+												</td>
+												<td data-label="Todo">0</td>
+											</tr>
+
+											<tr>
+												<td data-label="Name"> 
+													<img src="assets/images/user_1.png" class="rounded-circle"
+														alt="user ">
+													<span>Davi Marvel</span>
+												</td>
+												<td data-label="Project">Marketing</td>
+												<td data-label="Target">50 / 200 Bugs</td>
+												<td data-label="Status" colspan="2">
+													<div class="progress mt-2">
+														<div class="progress-bar green--bar" role="progressbar"
+															style="width: 94%" aria-valuenow="94" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+													<span class="text--dark float-right">93%</span>
+												</td>
+												<td data-label="Todo">0</td>
+											</tr>
+										</tbody>
+									</table> 
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</nav>
-		</header>
-		<body>
-			<main>
-				<section class="department mt--8">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="card p-lg-5  p-sm-2">
-									<div class="card-header bg-transparent border-0 bx--sh">
-										<div class="row justify-content-between">
-											<div class="col-6 col-md-5 col-lg-3">
-												<div class="text--grey">Show:
-													<select name="" id="interval" class="form-control custom--select-input">
-														<option value="">Monthly</option>
-														<option value="">weekly</option>
-														<option value=""></option>
-													</select>
-													<!-- <span class="dropdown show">
-														<a class="btn bg-transparent dropdown-toggle text--blue filter-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-															Monthly
-														</a>
-														
-														<div class="dropdown-menu menu-list" aria-labelledby="dropdownMenuLink">
-															<a class="dropdown-item" href="#" aria-label="monthly">monthly</a>
-															<a class="dropdown-item" href="#" aria-label="yearly">yearly</a>
-															<a class="dropdown-item" href="#" aria-label="quarterly">quarterly</a>
-														</div>
-													</span> -->
-												</div>
-												
-											</div>
-											<div class="col-6 col-md-6 col-lg-5 ">
-												<div class="float-right filter ">
-													<img src="assets/images/face.png" alt="" class="rounded-pill">
-													<span class="text--grey"> Department: </span>
-													<select name="" id="interval" class="form-control custom--select-input">
-														<option value="">All</option>
-														<option value="">Engineering</option>
-														<option value="">Marketing</option>
-													</select>
-												</div>
-											</div>
+			</section>
+			<section class="mt--2 mb-5">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-lg-4">
+							<div class="card border-0 bx--sh px-4 py-4 mb-md-3">
+								<div class="card-header bg-transparent border-0">
+									<div class="row justify-content-between">
+										<div class="col-md-4">
+											<p class="f-14 text-uppercase text--dark">todo list</p>
+										</div>
+										<div class="col-md-6">
+											<button
+												class="btn btn-sm bg--blue-darker text-white border-0 py-2 px-md-4 px-5 ">Add
+												Item</button>
 										</div>
 									</div>
-									<div class="">
-										<table class="table bd--grey">
-											<thead class="bg--light">
-												<tr>
-													<th scope="col">Name</th>
-													<th scope="col">Project</th>
-													<th scope="col">Achieved/Target</th>
-													<th scope="col" colspan="2">Progress Status</th>
-													<th scope="col">Todo List</th>
-												</tr>
-												
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<img src="assets/images/user_1.png" class="rounded-circle" alt="user ">
-														<span>Davi Marvel</span>
-													</td>
-													<td>Marketing</td>
-													<td>$90 / $150 Sales</td>
-													<td colspan="2">
-														<div class="progress mt-2">
-															<div class="progress-bar green--bar" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-															
-														</div>
-														<span class="float-right text--dark">94%</span>
-													</td>
-													<td>5 items</td>
-												</tr>
-												
-												<tr>
-													<td>
-														<img src="assets/images/user_2.png" class="rounded-circle" alt="user ">
-														<span>Rose Darwin</span>
-													</td>
-													<td>Debugging</td>
-													<td>10 / 50 Bugs</td>
-													<td colspan="2">
-														<div class="progress mt-2">
-															<div class="progress-bar orange--bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text--dark float-right">75%</span>
-													</td>
-													<td>2 items</td>
-												</tr>
-
-												<tr class="bg--light">
-													<td>
-														<img src="assets/images/user_3.png" class="rounded-circle" alt="user ">
-														<span>Lizzy James</span>
-													</td>
-													<td>Coding</td>
-													<td>3 / 120 Codes</td>
-													<td colspan="2">
-														<div class="progress mt-2">
-															<div class="progress-bar green--bar" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text--dark float-right">97%</span>
-													</td>
-													<td>17 items</td>
-												</tr>
-
-												<tr>
-													<td>
-														<img src="assets/images/user_1.png" class="rounded-circle" alt="user ">
-														<span>Alex Zue</span>
-													</td>
-													<td>KidStories</td>
-													<td>1 / 3 designs</td>
-													<td colspan="2">
-														<div class="progress mt-2">
-															<div class="progress-bar green--bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text--dark float-right">65%</span>
-													</td>
-													<td>0</td>
-												</tr>
-
-												<tr>
-													<td>
-														<img src="assets/images/user_1.png" class="rounded-circle" alt="user ">
-														<span>Davi Marvel</span>
-													</td>
-													<td>Marketing</td>
-													<td>$200 / $370 Sales</td>
-													<td colspan="2">
-														<div class="progress mt-2">
-															<div class="progress-bar orange--bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-														</div>
-														<span class="text--dark float-right">90%</span>
-													</td>
-													<td>0</td>
-												</tr>
-
-													<tr>
-														<td>
-															<img src="assets/images/user_1.png" class="rounded-circle" alt="user ">
-															<span>Davi Marvel</span>
-														</td>
-														<td>Marketing</td>
-														<td>50 / 200 Bugs</td>
-														<td colspan="2">
-															<div class="progress mt-2">
-																<div class="progress-bar green--bar" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-															</div>
-															<span class="text--dark float-right">93%</span>
-														</td>
-														<td>0</td>
-													</tr>
-											</tbody>
-										</table>
-									</div>
+								</div>
+								<div class="table-responsive mt-3">
+									<table class="table bd--grey ">
+										<thead class="bg--light">
+											<tr>
+												<th></th>
+												<th>Task Title</th>
+												<th>Due Date</th>
+											</tr>
+										</thead>
+										<tbody class=" text--dark">
+											<tr>
+												<td >
+													<input type="radio" class="custom--radio-input" name="task"
+														id="task_1">
+												</td>
+												<td data-label="Task Title">New office phones</td>
+												<td data-label="Due Date">2 days</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="radio" name="task" class="custom--radio-input"
+														id="task_2">
+												</td>
+												<td data-label="Task Title">New office chairs</td>
+												<td data-label="Due Date">1 week</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
-					</div>	
-				</section>
-				<section class="mt--2 mb-5">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-12 col-lg-4">
-								<div class="card border-0 bx--sh px-4 py-4 mb-md-3">
-									<div class="card-header bg-transparent border-0">
-										<div class="row justify-content-between">
-											<div class="col-md-4">
-												<p class="f-14 text-uppercase text--dark">todo list</p>
-											</div>
-											<div class="col-md-6">
-												<button class="btn btn-sm bg--blue-darker text-white border-0 py-2 px-md-4 px-5 ">Add Item</button>
-											</div>
-										</div>
-									</div>
-									<div class="table-responsive mt-3">
-										<table class="table bd--grey ">
-											<thead class="bg--light">
-												<tr>
-													<th></th>
-													<th>Task Title</th>
-													<th>Due Date</th>
-												</tr>
-											</thead>
-											<tbody class=" text--dark">
-												<tr>
-													<td>
-														<input type="radio" class="custom--radio-input" name="task" id="task_1">
-													</td>
-													<td>New office phones</td>
-													<td>2 days</td>
-												</tr>
-												<tr>
-													<td>
-														<input type="radio" name="task" class="custom--radio-input" id="task_2">
-													</td>
-													<td>New office chairs</td>
-													<td>1 week</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12 col-lg-8">
-								<div class="card border-0 bx--sh px-4 pt-4 pb--3">
-									<div class="header">
-										<p class="text--dark">How was today?</p>
-										
-									</div>
-									<div class="row mt-4">
-										<div class="col-md-9">
-											<p class="">What went well today?</p>
-											<textarea name="user_review" class="custom--textarea-input" id="user_review"></textarea>
-										</div>
-										<div class="col-md-3">
-											<p>Number of sales</p>
-											<input type="text" class='custom--input px-2'>
-
-											<button class="btn btn-block bg--blue-darker text-white font-weight-bold mt--3">Save</button>
-										</div>
-									</div>
+						<div class="col-md-12 col-lg-8">
+							<div class="card border-0 bx--sh px-4 pt-4 pb--3">
+								<div class="header">
+									<p class="text--dark">How was today?</p>
 
 								</div>
+								<div class="row mt-4">
+									<div class="col-md-9">
+										<p class="">What went well today?</p>
+										<textarea name="user_review" class="custom--textarea-input"
+											id="user_review"></textarea>
+									</div>
+									<div class="col-md-3">
+										<p>Number of sales</p>
+										<input type="text" class='custom--input px-2'>
+
+										<button
+											class="btn btn-block bg--blue-darker text-white font-weight-bold mt--3">Save</button>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="mt--5 bg--blue-lighter pt-4">
-					<div class="container">
-						<div class="text-center text--dark">
-							Your Mood
-							<span class="dropdown show">
-								<a class="btn bg-transparent dropdown-toggle text--dark" href="#" role="button" id="dropdownMenuMood" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									😀
-								</a>
-								
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuMood">
-									<a class="dropdown-item" href="#" aria-label="grinning face">😀</a>
-									<a class="dropdown-item" href="#" aria-label="grinning face with big eyes">😃</a>
-									<a class="dropdown-item" href="#" aria-label="beaming face with smiling eyes">😁</a>
-									<a class="dropdown-item" href="#" aria-label="relieved face">😌</a>
-								</div>
-							</span>
+				</div>
+			</section>
+			<section class="mt--5 bg--blue-lighter pt-4">
+				<div class="main-footer">
+					<p>Your Mood:
+					<span>
+						<select>
+							<option value="👻" selected>👻</option>
+							<option value="🐝">🐝</option>
+							<option value="👾">👾</option>
+							<option value="🏈">🏈</option>
+							<option value="🤔">🤔</option>
+							<option value="🍕">🍕</option>
+							<option value="🚀">🚀</option>
+						</select>
+					</span>
+						<span class="emoji-caret"></span>
+				
+					</p>
+				
+					<div class="main-footer-section">
+						<div>
+							<img src="assets/images/img1.svg" alt="">
+							<p>Alex</p>
+						</div>
+						<div>
+							<h6>Who has seen my pencil?</h6>
+							<img src="assets/images/img2.svg" alt="">
+							<p>Rose</p>
+						</div>
+						<div>
+							<img src="assets/images/img3.svg" alt="">
+							<p>Davi</p>
+						</div>
+						<div>
+							<img src="assets/images/img4.svg" alt="">
+							<p>Lex</p>
+						</div>
+						<div>
+							<div>
+								<img class="thoughtIcon" src="assets/images/thought-icon.svg" alt="">
+								<p class="thoughtText">Just doing the daily grind. Nothing too much happening.</p>
+							</div>
+							<img src="assets/images/img5.svg" alt="">
+							<p>You</p>
+						</div>
+						<div>
+							<img src="assets/images/img6.svg" alt="">
+							<p>Luther</p>
+						</div>
+						<div>
+							<img src="assets/images/img7.svg" alt="">
+							<p>Arya</p>
+						</div>
+						<div>
+							<h6>I’m winning this week for sure</h6>
+							<img src="assets/images/img8.svg" alt="">
+							<p>Steve</p>
 						</div>
 					</div>
-				</section>
-			</main>
-		</body>
-		<footer class="footer bg-white pt-3">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-3">
-						<p class="f-18 font-weight-bold">&copy; 2018 ExpenseTrim</p>
-					</div>
-					<div class="col-6 col-md-3">
-						<p class="f-18 font-weight-bold text-center">Terms of Use</p>
-					</div>
-					<div class="col-6 col-md-3">
-						<p class="f-18 font-weight-bold text-right">Privacy Policy</p>
-					</div>
+				</div>
+			</section>
+			
+		</main>
+	</body>
+	<footer class="footer bg-white pt-3">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-3">
+					<p class="f-18 font-weight-bold">&copy; 2018 ExpenseTrim</p>
+				</div>
+				<div class="col-6 col-md-3">
+					<p class="f-18 font-weight-bold text-center">Terms of Use</p>
+				</div>
+				<div class="col-6 col-md-3">
+					<p class="f-18 font-weight-bold text-right">Privacy Policy</p>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+</body>
+
 </html>

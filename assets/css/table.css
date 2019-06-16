@@ -1,44 +1,49 @@
+/* body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+} */
+
 table {
-  border: 1px solid #ccc !important;
-  border-collapse: collapse !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  table-layout: fixed !important;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
 }
 
 table caption {
-  font-size: 1.5em !important;
-  margin: .5em 0 .75em !important;
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
 }
 
 table tr {
-  /* background-color: #f8f8f8 !important; */
-  border: 1px solid #ddd !important;
-  padding: .35em !important;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
 }
 
 table th,
 table td {
-  padding: .625em !important;
-  text-align: center !important;
+  padding: .625em;
+  text-align: center;
 }
 
 table th {
-  font-size: .85em !important;
-  letter-spacing: .1em !important;
-  text-transform: uppercase !important;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 .page {
-  display: block !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  margin: -17px -54px !important;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -17px -54px;
 }
 
-/* .select-dropdown {
+.select-dropdown {
   position: relative;
   background-color: #e6e6e6;
   width: auto;
@@ -57,8 +62,8 @@ table th {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-} */
-/* .select-dropdown select:active, .select-dropdown select:focus {
+}
+.select-dropdown select:active, .select-dropdown select:focus {
   outline: none;
   box-shadow: none;
 }
@@ -73,41 +78,130 @@ table th {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #aaa;
-} */
+}
 
+
+.main-footer {
+  background: rgb(6, 128, 195, .25);
+  min-height: 290px;
+}
+
+.main-footer p {
+  color: #333;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.main-footer span select {
+  background: transparent;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.emoji-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: -4px;
+  margin-top: -2px;
+  vertical-align: middle;
+  border-top: 7px dashed;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+
+.main-footer .main-footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1200px;
+  min-height: 240px;
+}
+
+.main-footer .main-footer-section > div > h6 {
+  position: absolute;
+  margin-top: -33px;
+  min-width: 250px;
+}
+
+.main-footer .main-footer-section > div > p {
+  text-align: center;
+  margin-top: .5rem;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0rem;
+}
+
+.main-footer .main-footer-section div {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.main-footer .main-footer-section .thoughtText {
+  position: absolute;
+  top: 14px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+  padding: 10px;
+}
 
 @media screen and (max-width: 600px) {
   table {
-    border: 0 !important;
+    border: 0;
   }
 
   table caption {
-    font-size: 1.3em !important;
+    font-size: 1.3em;
   }
   
   table thead {
-    border: none !important;
-    clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
-  
+
+  .progress {
+    height: 10px !important;
+    margin-right: 50px;
+}
+
+  .text--dark {
+    color: #000000;
+    margin-top: -5%;
+  }
+
   table tr {
-    border-bottom: 3px solid #ddd !important;
-    display: block !important;
-    margin-bottom: .625em !important;
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
   }
   
   table td {
-    border-bottom: 1px solid #ddd !important;
-    display: block !important;
-    font-size: .8em !important;
-    text-align: right !important;
-    min-height: 50px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  .main-footer{
+    min-height: 0;
+    margin-bottom: -10px;
+  }
+
+  .main-footer-section{
+    display: none !important;
   }
   
   table td::before {
@@ -115,13 +209,14 @@ table th {
     * aria-label has no advantage, it won't be read inside a table
     content: attr(aria-label);
     */
-    content: attr(data-label) !important;
-    float: left !important;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 70px;
   }
   
   table td:last-child {
-    border-bottom: 0 !important;
+    border-bottom: 0;
   }
 }
