@@ -95,20 +95,23 @@ html,body{
 	text-align: center;
 }
 .custom--select-input2{
-		display: inline-block !important;
-		border: none;
-		width: 60%;
-		padding-left: 0px;
-		border: 1px solid #b0bac5; 
-	}
-	.add-project-btn{
-		float: left;
-		margin-left: 6rem;
-	}
+	display: inline-block !important;
+	border: none;
+	width: 60%;
+	padding-left: 0px;
+	border: 1px solid #b0bac5; 
+}
+.add-project-btn{
+	float: left;
+	border: 1px solid #000;
+}
 .custom--select-input{
 	display: inline-block !important;
 	border: none;
 	width: 70%;
+}
+.input-2{
+	width: 30%;
 }
 .menu-list{ -webkit-appearance: menulist; }
 @media(max-width: 425px){
