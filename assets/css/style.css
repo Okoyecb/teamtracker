@@ -89,6 +89,12 @@ html,body{
 .interval--filter-dropdown{
 	border-left:1px solid #b0bac5; 
 }
+
+.filter-select{
+	border-radius: 0;
+	border: 1px solid #b0bac5;
+}
+
 .target-input-currency{
 	width: 40px;
 	text-align: center;
