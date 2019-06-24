@@ -15,45 +15,48 @@
 		<title>Team Tracker</title>
 	</head>
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg bg--blue">
-				<a class="navbar-brand" href="index.html"><p class="text-white l--33 f-24 ls--3">TEAMTRACKER</p> </a>
-			  	<button class="navbar-toggler bd--white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    	<span class="fa fa-bars text-white"></span>
-			  	</button>
+		<header class="bg--blue">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg bg--blue">
+					<a class="navbar-brand" href="index.html"><p class="text-white l--33 f-24 ls--3">TEAMTRACKER</p> </a>
+					<button class="navbar-toggler bd--white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-bars text-white"></span>
+					</button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-				      	<li class="nav-item dropdown">
-				        	<a class="nav-link dropdown-toggle text-white custom--dropdown" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<div class="row">
-									<div class="col-md-3 ">
-										<img src="assets/images/user_profile.png" class="w-100 user-profile" alt="user profile">
-									</div>
-									<div class="col-md-9 px-0">
-										<div class="profile-details">
-											<p class="user--name mb-0 f-14 font-weight-bold">Jeremiah Righteous </p>
-									  		<p class="title mt-0 f-11 font-weight-bold">Owner</p>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle text-white custom--dropdown" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<div class="row">
+										<div class="col-md-3 ">
+											<img src="assets/images/user_profile.png" class="w-100 user-profile" alt="user profile">
 										</div>
-										
-									</div>
-								</div>			          		
-				        	</a>
-				        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				          		<a class="dropdown-item" href="#">dashboard</a>
-						        <a class="dropdown-item" href="#">Settings</a>
-						        <div class="dropdown-divider"></div>
-						        <a class="dropdown-item" href="#">Log Out</a>
-				        	</div>
-				      	</li>
-				    </ul>
-				</div>
-			</nav>
+										<div class="col-md-9 px-0">
+											<div class="profile-details">
+												<p class="user--name mb-0 f-14 font-weight-bold">Jeremiah Righteous </p>
+												<p class="title mt-0 f-11 font-weight-bold">Owner</p>
+											</div>
+											
+										</div>
+									</div>			          		
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">dashboard</a>
+									<a class="dropdown-item" href="#">Settings</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Log Out</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			
 		</header>
 		<body>
 			<main>
 				<section class="department mt--8">
-					<div class="container-fluid">
+					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="card p-lg-5  p-sm-2">
@@ -64,7 +67,7 @@
 												<div class="filter">
 													<img src="assets/images/face.png" alt="" class="rounded-pill">
 													<span class="text--grey"> Department: </span>
-													<select name="" id="interval" class="form-control custom--select-input2 input-2">
+													<select name="" id="interval" class="form-control custom--select-input input-2 w-auto">
 														<option value="">All</option>
 														<option value="">Engineering</option>
 														<option value="">Marketing</option>
@@ -169,7 +172,7 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td class="text-center">
-                                                        <button class="btn btn-md bg--blue text-white font-weight-bold px-5 save-btn" >Save</button>
+                                                        <button class="btn btn-md bg--blue text-white font-weight-bold px-5 save-btn" id="save_project_btn" >Save</button>
                                                     </td>
                                                 </tr>
 											</tbody>
@@ -223,5 +226,20 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<script>
+			$(document).ready(function(){
+				$("#save_project_btn").on('click', function(){
+					Swal.fire(
+						{
+						type: 'success',
+						title: "Your Project has been saved",
+						showConfirmButton: true
+						}
+					)
+				});
+			})
+			
+		</script>
 	</body>
 </html>

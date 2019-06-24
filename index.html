@@ -11,62 +11,67 @@
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/table.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	
 
 	<title>Team Tracker</title>
 </head>
 
 <body>
 	<header>
+		
 		<nav class="navbar navbar-expand-lg bg--blue">
-			<a class="navbar-brand" href="index.html">
-				<p class="text-white l--33 f-24 ls--3">TEAMTRACKER</p>
-			</a>
-			<button class="navbar-toggler bd--white" type="button" data-toggle="collapse"
-				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="fa fa-bars text-white"></span>
-			</button>
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<p class="text-white l--33 f-24 ls--3">TEAMTRACKER</p>
+				</a>
+				<button class="navbar-toggler bd--white" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="fa fa-bars text-white"></span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle text-white custom--dropdown" href="#" id="navbarDropdown "
-							role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<div class="row">
-								<div class="col-md-3 ">
-									<img src="assets/images/user_profile.png" class="w-100 user-profile"
-										alt="user profile">
-								</div>
-								<div class="col-md-9 px-0">
-									<div class="profile-details">
-										<p class="user--name mb-0 f-14 font-weight-bold">Jeremiah Righteous </p>
-										<p class="title mt-0 f-11 font-weight-bold">Owner</p>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-white custom--dropdown" href="#" id="navbarDropdown "
+								role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<div class="row">
+									<div class="col-md-3 ">
+										<img src="assets/images/user_profile.png" class="w-100 user-profile"
+											alt="user profile">
 									</div>
+									<div class="col-md-9 px-0">
+										<div class="profile-details">
+											<p class="user--name mb-0 f-14 font-weight-bold">Jeremiah Righteous </p>
+											<p class="title mt-0 f-11 font-weight-bold">Owner</p>
+										</div>
 
+									</div>
 								</div>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">dashboard</a>
+								<a class="dropdown-item" href="#">Settings</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log Out</a>
 							</div>
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">dashboard</a>
-							<a class="dropdown-item" href="#">Settings</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Log Out</a>
-						</div>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
+			
 		</nav>
 	</header>
 
 	<body>
 		<main>
 			<section class="department mt--8">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="card p-lg-5  p-sm-2">
+							<div class="card p-lg-4  p-sm-2">
 								<div class="card-header bg-transparent border-0 bx--sh">
 									<div class="row justify-content-between">
 										<div class="col-6 col-md-5 col-lg-3">
@@ -74,15 +79,15 @@
 												<select name="" id="interval" class="form-control custom--select-input">
 													<option value="">Monthly</option>
 													<option value="">weekly</option>
-													<option value=""></option>
+													<option value="">Yearly</option>
 												</select>
 											</div>
 										</div>
 										<div class="col-6 col-md-6 col-lg-5 ">
-											<div class="float-right filter ">
+											<div class="float-right">
 												<img src="assets/images/face.png" alt="" class="rounded-pill">
 												<span class="text--grey">Department:</span>
-												<select name="" id="interval" class="form-control custom--select-input input-2">
+												<select name="" id="interval" class="form-control custom--select-input input-2 w-auto">
 													<option value="">All</option>
 													<option value="">Engineering</option>
 													<option value="">Marketing</option>
@@ -92,9 +97,9 @@
 									</div>
 								</div>
 								<div class="">
-									 <table class="table bd--grey">
-										<thead class="bg--light">
-											<tr>
+									 <table class="table bd--grey table-hover">
+										<thead>
+											<tr class="bg--light f-14">
 												<th scope="col">Name</th>
 												<th scope="col">Project</th>
 												<th scope="col">Achieved/Target</th>
@@ -114,12 +119,12 @@
 												<td data-label="Target">$90 / $150 Sales</td>
 												<td data-label="Status" colspan="2">
 													<div class="progress mt-2">
-														<div class="progress-bar green--bar" role="progressbar"
-															style="width: 94%" aria-valuenow="94" aria-valuemin="0"
+														<div class="progress-bar green--bar" id="bar_1" role="progressbar"
+															style="width: 1%" aria-valuenow="94" aria-valuemin="0"
 															aria-valuemax="100"></div>
 
 													</div>
-													<span class="float-right text--dark">94%</span>
+													<span class="float-right text--dark value" id="value_1">94%</span>
 												</td>
 												<td data-label="Todo">5 items</td>
 											</tr>
@@ -134,16 +139,16 @@
 												<td data-label="Target">10 / 50 Bugs</td>
 												<td data-label="Status" colspan="2">
 													<div class="progress mt-2">
-														<div class="progress-bar orange--bar" role="progressbar"
-															style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+														<div class="progress-bar orange--bar" id="bar_2" role="progressbar"
+															style="width: 1%" aria-valuenow="75" aria-valuemin="0"
 															aria-valuemax="100"></div>
 													</div>
-													<span class="text--dark float-right">75%</span>
+													<span class="text--dark float-right" id="value_2">75%</span>
 												</td>
 												<td data-label="Todo">2 items</td>
 											</tr>
 
-											<tr class="bg--light">
+											<tr>
 												<td data-label="Name">
 													<img src="assets/images/user_3.png" class="rounded-circle"
 														alt="user ">
@@ -153,11 +158,11 @@
 												<td data-label="Target">3 / 120 Codes</td>
 												<td data-label="Status" colspan="2">
 													<div class="progress mt-2">
-														<div class="progress-bar green--bar" role="progressbar"
-															style="width: 97%" aria-valuenow="97" aria-valuemin="0"
+														<div class="progress-bar green--bar" id="bar_3" role="progressbar"
+															style="width: 1%" aria-valuenow="97" aria-valuemin="0"
 															aria-valuemax="100"></div>
 													</div>
-													<span class="text--dark float-right">97%</span>
+													<span class="text--dark float-right" id="value_3">97%</span>
 												</td>
 												<td data-label="Todo">17 items</td>
 											</tr>
@@ -172,11 +177,11 @@
 												<td data-label="Target">1 / 3 designs</td>
 												<td data-label="Status" colspan="2">
 													<div class="progress mt-2">
-														<div class="progress-bar green--bar" role="progressbar"
-															style="width: 65%" aria-valuenow="65" aria-valuemin="0"
+														<div class="progress-bar green--bar" id="bar_4" role="progressbar"
+															style="width: 1%" aria-valuenow="65" aria-valuemin="0"
 															aria-valuemax="100"></div>
 													</div>
-													<span class="text--dark float-right">65%</span>
+													<span class="text--dark float-right" id="value_4">65%</span>
 												</td>
 												<td data-label="Todo">0</td>
 											</tr>
@@ -191,11 +196,11 @@
 												<td data-label="Target">$200 / $370 Sales</td>
 												<td data-label="Status" colspan="2">
 													<div class="progress mt-2">
-														<div class="progress-bar orange--bar" role="progressbar"
-															style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+														<div class="progress-bar orange--bar" id="bar_5" role="progressbar"
+															style="width: 1%" aria-valuenow="90" aria-valuemin="0"
 															aria-valuemax="100"></div>
 													</div>
-													<span class="text--dark float-right">90%</span>
+													<span class="text--dark float-right" id="value_5">90%</span>
 												</td>
 												<td data-label="Todo">0</td>
 											</tr>
@@ -210,11 +215,11 @@
 												<td data-label="Target">50 / 200 Bugs</td>
 												<td data-label="Status" colspan="2">
 													<div class="progress mt-2">
-														<div class="progress-bar green--bar" role="progressbar"
-															style="width: 94%" aria-valuenow="94" aria-valuemin="0"
+														<div class="progress-bar green--bar" id="bar_6" role="progressbar"
+															style="width: 1%" aria-valuenow="93" aria-valuemin="0"
 															aria-valuemax="100"></div>
 													</div>
-													<span class="text--dark float-right">93%</span>
+													<span class="text--dark float-right" id="value_6">93%</span>
 												</td>
 												<td data-label="Todo">0</td>
 											</tr>
@@ -227,18 +232,16 @@
 				</div>
 			</section>
 			<section class="mt--2 mb-5">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
-						<div class="col-md-12 col-lg-4">
+						<div class="col-md-12 col-lg-5">
 							<div class="card border-0 bx--sh px-4 py-4 mb-md-3">
 								<div class="card-header bg-transparent border-0">
 									<div class="row justify-content-between">
-										<div class="col-md-4">
-											<p class="f-14 text-uppercase text--dark">todo list</p>
-										</div>
-										<div class="col-md-6">
+										<div class="col-md-12">
+											<span class="f-14 text-uppercase text--dark pull-left">todo list</span>
 											<button
-												class="btn btn-sm bg--blue-darker text-white border-0 py-2 px-md-4 px-5 ">Add
+												class="btn btn-sm bg--blue-darker text-white border-0 py-2 px-md-4 px-5 pull-right ">Add
 												Item</button>
 										</div>
 									</div>
@@ -248,8 +251,8 @@
 										<thead class="bg--light">
 											<tr>
 												<th></th>
-												<th>Task Title</th>
-												<th>Due Date</th>
+												<th colspan="2">Task Title</th>
+												<th >Due Date</th>
 											</tr>
 										</thead>
 										<tbody class=" text--dark">
@@ -258,7 +261,7 @@
 													<input type="radio" class="custom--radio-input" name="task"
 														id="task_1">
 												</td>
-												<td data-label="Task Title">New office phones</td>
+												<td colspan="2" data-label="Task Title">New office phones</td>
 												<td data-label="Due Date">2 days</td>
 											</tr>
 											<tr>
@@ -266,7 +269,7 @@
 													<input type="radio" name="task" class="custom--radio-input"
 														id="task_2">
 												</td>
-												<td data-label="Task Title">New office chairs</td>
+												<td data-label="Task Title" colspan="2">New office chairs</td>
 												<td data-label="Due Date">1 week</td>
 											</tr>
 										</tbody>
@@ -274,7 +277,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-12 col-lg-8">
+						<div class="col-md-12 col-lg-7">
 							<div class="card border-0 bx--sh px-4 pt-4 pb--3">
 								<div class="header">
 									<p class="text--dark">How was today?</p>
@@ -291,7 +294,7 @@
 										<input type="text" class='custom--input px-2'>
 
 										<button
-											class="btn btn-block bg--blue-darker text-white font-weight-bold mt--3">Save</button>
+											class="btn btn-block bg--blue-darker text-white font-weight-bold mt--3" id="feedback_btn">Save</button>
 									</div>
 								</div>
 
@@ -389,6 +392,27 @@
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		app.initProgressBar();
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#feedback_btn").on('click', function(){
+				Swal.fire(
+					{
+					type: 'success',
+					title: "Your feedback has been saved",
+					showConfirmButton: true
+					}
+				)
+			});
+			
+			
+		})
+		
 	</script>
 </body>
 
