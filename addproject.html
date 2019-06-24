@@ -83,20 +83,20 @@
 												<th>Maximum Target</th>
 												<th>Target Type</th>
 												<th>Target Interval</th>
-                                                <th>department </th>
+                                                <th>Department </th>
                                                 <th>Assigned To </th>
 											</thead>
 											<tbody>
 												<tr>
-													<td>
+													<td data-label="Project">
 														Timbu
 													</td>
-													<td>
+													<td data-label="Maximum Target">
                                                         <input type="text" class="target-input-currency" readonly value="$">
                                                         <input type="text" class="target-input" placeholder="200">
                                                     </td>
-													<td contenteditable>Features</td>
-													<td>
+													<td data-label="Target Type" contenteditable>Features</td>
+													<td data-label="Target Interval">
                                                         
                                                         <div class="btn-group target-interval-filter">
                                                             <button type="button" class="btn bg-transparent text--dark-darker w-100">Monthly</button>
@@ -112,7 +112,7 @@
                                                         </div>
                                                         
                                                     </td>
-                                                    <td>
+                                                    <td data-label="Department">
                                                         <div class="btn-group target-interval-filter">
                                                             <button type="button" class="btn bg-transparent text--dark-darker w-100">Department</button>
                                                             <button type="button" class="btn bg-transparent text--dark-darker dropdown-toggle interval--filter-dropdown dropdown-toggle-split w-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -127,7 +127,7 @@
                                                             </div>
                                                         </div>
                                                     </td>
-													<td>
+													<td data-label="assigned To">
                                                         <img src="assets/images/user_1.png" class="rounded-circle" alt="">
                                                         <img src="assets/images/user_2.png" class="rounded-circle" alt="">
                                                         <img src="assets/images/user_3.png" class="rounded-circle" alt="">
@@ -136,7 +136,7 @@
 												</tr>
 												
 												<tr>
-													<td>
+													<td data-label="Project">
                                                         Sales(Corporate)
                                                     </td>
                                                     <td></td>
@@ -147,7 +147,7 @@
 												</tr>
 
 												<tr>
-													<td>Coding</td>
+													<td data-label="Project">Coding</td>
                                                     <td></td>
                                                     <td></td>
 													<td></td>
@@ -156,7 +156,7 @@
 												</tr>
 
 												<tr>
-													<td>
+													<td data-label="Project">
 														KidStories
 													</td>
                                                     <td></td>
@@ -184,27 +184,69 @@
 					</div>	
 				</section>
 				
-				<section class="mt--5 bg--blue-lighter pt-4">
-					<div class="container">
-						<div class="text-center text--dark">
-							Your Mood
-							<span class="dropdown show">
-								<a class="btn bg-transparent dropdown-toggle text--dark" href="#" role="button" id="dropdownMenuMood" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									😀
-								</a>
-								
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuMood">
-									<a class="dropdown-item" href="#" aria-label="grinning face">😀</a>
-									<a class="dropdown-item" href="#" aria-label="grinning face with big eyes">😃</a>
-									<a class="dropdown-item" href="#" aria-label="beaming face with smiling eyes">😁</a>
-									<a class="dropdown-item" href="#" aria-label="relieved face">😌</a>
-								</div>
-							</span>
-						</div>
-					</div>
-				</section>
+				
 			</main>
 		</body>
+		<section class="mt--5 bg--blue-lighter pt-4">
+			<div class="main-footer">
+				<p>Your Mood:
+				<span>
+					<select>
+						<option value="👻" selected>👻</option>
+						<option value="🐝">🐝</option>
+						<option value="👾">👾</option>
+						<option value="🏈">🏈</option>
+						<option value="🤔">🤔</option>
+						<option value="🍕">🍕</option>
+						<option value="🚀">🚀</option>
+					</select>
+				</span>
+					<span class="emoji-caret"></span>
+			
+				</p>
+			
+				<div class="main-footer-section">
+					<div>
+						<img src="assets/images/img1.svg" alt="">
+						<p>Alex</p>
+					</div>
+					<div>
+						<h6>Who has seen my pencil?</h6>
+						<img src="assets/images/img2.svg" alt="">
+						<p>Rose</p>
+					</div>
+					<div>
+						<img src="assets/images/img3.svg" alt="">
+						<p>Davi</p>
+					</div>
+					<div>
+						<img src="assets/images/img4.svg" alt="">
+						<p>Lex</p>
+					</div>
+					<div>
+						<div>
+							<img class="thoughtIcon" src="assets/images/thought-icon.svg" alt="">
+							<p class="thoughtText">Just doing the daily grind. Nothing too much happening.</p>
+						</div>
+						<img src="assets/images/img5.svg" alt="">
+						<p>You</p>
+					</div>
+					<div>
+						<img src="assets/images/img6.svg" alt="">
+						<p>Luther</p>
+					</div>
+					<div>
+						<img src="assets/images/img7.svg" alt="">
+						<p>Arya</p>
+					</div>
+					<div>
+						<h6>I’m winning this week for sure</h6>
+						<img src="assets/images/img8.svg" alt="">
+						<p>Steve</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer class="footer bg-white pt-3">
 			<div class="container">
 				<div class="row justify-content-center">
