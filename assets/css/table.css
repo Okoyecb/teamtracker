@@ -144,12 +144,6 @@ table th {
   margin-bottom: 0rem;
 }
 
-.main-footer .main-footer-section div {
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-}
-
 .main-footer .main-footer-section .thoughtText {
   position: absolute;
   top: 14px;
@@ -158,10 +152,18 @@ table th {
   line-height: 120%;
   padding: 10px;
 }
-.main-footer-section.carousel-item{
-	max-width: calc(100% / 8);
+.main-footer-section .carousel-items{
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-
+.mr--5{
+  margin-right: 5rem;
+}
+.w-30{ width: 30px;}
+.p--5{ 
+  padding: 0.2rem 0.5rem;
+}
 @media screen and (max-width: 600px) {
   table {
     border: 0;
