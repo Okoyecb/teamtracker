@@ -181,6 +181,21 @@ p.user-name{
 .owl-item img{
 	margin: auto;
 }
+
+@media (min-width: 767px){
+	.carousel-mobile{
+		display: none !important;
+	}
+}
+@media (max-width: 300px) and (min-width: 600px){
+	.carousel-mobile{
+		display: block !important;
+	}
+	.carousel-items{
+		display: none;
+	}
+}
+
 @media(max-width: 425px){
 	.filter img{
 		display: none;

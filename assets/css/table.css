@@ -146,6 +146,9 @@ table th {
 .thoughtIcon{
   margin-left:-39px;
 }
+.thoughtIcon--desktop{
+  margin-left: 0px;
+}
 
 .main-footer .main-footer-section .thoughtText {
   position: absolute;
@@ -155,6 +158,16 @@ table th {
   line-height: 20px;
   padding: 10px;
   left: 0;
+  right: 0;
+}
+.main-footer .main-footer-section .thoughtText--desktop{
+  position: absolute;
+  top: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 6px;
+  left: 4px;
   right: 0;
 }
 .main-footer-section .carousel-items{
