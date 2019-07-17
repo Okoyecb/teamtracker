@@ -3,7 +3,7 @@
   line-height: 1.25;
 } */
 
-table {
+/* table {
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
@@ -35,7 +35,7 @@ table th {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
-
+*/
 .page {
   display: block;
   position: absolute;
@@ -78,9 +78,8 @@ table th {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #aaa;
+  border-top: 5px solid #aaa; 
 }
-
 
 .main-footer {
   background: rgb(6, 128, 195, .25);
@@ -150,7 +149,7 @@ table th {
   margin-left: 0px;
 }
 
-.main-footer .main-footer-section .thoughtText {
+.main-footer .main-footer-section p.thoughtText {
   position: absolute;
   top: 8px;
   font-weight: 600;
@@ -185,7 +184,7 @@ table th {
 
 
 @media screen and (max-width: 600px) {
-  table {
+  /* table {
     border: 0;
   }
 
@@ -202,7 +201,7 @@ table th {
     padding: 0;
     position: absolute;
     width: 1px;
-  }
+  } */
 
   .progress {
     height: 10px !important;
@@ -214,7 +213,7 @@ table th {
     margin-top: -5%;
   }
 
-  table tr {
+  /* table tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
@@ -225,7 +224,7 @@ table th {
     display: block;
     font-size: .8em;
     text-align: right;
-  }
+  } */
 
   .main-footer{
     min-height: 0;
@@ -241,11 +240,7 @@ table th {
     line-height: 30px !important;
     top: 14px !important;
   }
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
+  /* table td::before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
@@ -255,5 +250,5 @@ table th {
   
   table td:last-child {
     border-bottom: 0;
-  }
+  } */
 }
